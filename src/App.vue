@@ -2,9 +2,13 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/list">My List</router-link> | 
+      <router-link to="/browse">Browse Activities</router-link>
     </div>
     <router-view/>
+    <div class='footer'>
+      <p>https://github.com/cbrewerton/CreativeProject3</p>
+    </div>
   </div>
 </template>
 
@@ -27,6 +31,16 @@
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #0c10d3;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #0c10d3;
+  color: white;
+  text-align: center;
 }
 </style>
